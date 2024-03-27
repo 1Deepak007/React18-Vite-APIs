@@ -10,7 +10,7 @@ import Home from './Components/Home/Home'
 import About from './Components/About/Aboutus'
 import ContactUs from './Components/Contact/ContactUs'
 import User from './Components/User';
-import Github from './Components/Github/Github';
+import Github, { githubInfoLoader } from './Components/Github/Github';
 
 
 // ROUTING
@@ -36,8 +36,12 @@ const router = createBrowserRouter(
       <Route path="contact" element={<ContactUs/>}/>
       {/* sending id and receiving on User.jsx */}
       <Route path="user/:userid" element={<User/>}/>
-      <Route path="github" element={<Github/>}/>
-    </Route>
+      {/* Loader : we can make API calls from loader. As we bring cursour on Github button it wl strt ftchng data from API.  */}
+      {/* <Route path="github" loader={({request})=>fetch()} element={<Github/>}/> */}
+      <Route path="github" 
+             loader={githubInfoLoader} 
+             element={<Github/>}/>
+      </Route>
   )
 );
 
@@ -46,3 +50,4 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <RouterProvider router={router} />
   </React.StrictMode>,
 )
+
