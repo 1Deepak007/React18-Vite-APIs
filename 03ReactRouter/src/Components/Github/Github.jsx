@@ -24,11 +24,15 @@ export default function Github() {
 
   return (
     <>
-        <div className="container bg-success">
+        <div className="bg-primary">
+          <div className="card-body">
             <h2>Github UserName : {data?.name}</h2>
             <h2>Github Followers : {data?.followers}</h2>
             <h2>Github Public Repos. : {data?.public_repos}</h2>
-        </div> 
+          </div>
+        </div>
+
+    <h1 className='text-center'>GitHub Followers</h1>
 
         <Card border="warning" style={{ width: '18rem' }}>
           <Card.Header>Header</Card.Header>
