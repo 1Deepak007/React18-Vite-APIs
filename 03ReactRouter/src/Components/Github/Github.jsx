@@ -24,28 +24,14 @@ export default function Github() {
 
   return (
     <>
-        <div className="bg-primary">
-          <div className="card-body">
+      <h1 className='text-center underline'>GitHub Followers</h1>
+        <div className="bg-sky-400">
+          <div className="card-body text-center">
             <h2>Github UserName : {data?.name}</h2>
             <h2>Github Followers : {data?.followers}</h2>
             <h2>Github Public Repos. : {data?.public_repos}</h2>
           </div>
         </div>
-
-    <h1 className='text-center'>GitHub Followers</h1>
-
-        <Card border="warning" style={{ width: '18rem' }}>
-          <Card.Header>Header</Card.Header>
-          <Card.Body>
-            <Card.Title>Warning Card Title</Card.Title>
-            <Card.Text>
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </Card.Text>
-          </Card.Body>
-        </Card>
-        <br />
-
     </>
   )
 }
