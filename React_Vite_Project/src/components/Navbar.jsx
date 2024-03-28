@@ -53,6 +53,9 @@ function Navigationbar() {
               <NavDropdown.Item href="/nestedcomponent">Nested Components</NavDropdown.Item>
               <NavDropdown.Item href="/props">Props</NavDropdown.Item>
               <NavDropdown.Item href="/form">Form</NavDropdown.Item>
+              <NavDropdown.Item href="/conditionalRendering">Conditional Rendering</NavDropdown.Item>
+              <NavDropdown.Item href="/hooks">Hooks(useState/useEffect)</NavDropdown.Item>
+              <NavDropdown.Item href="/hooks1">HooksMore(useEffect,useRef,useCallback)</NavDropdown.Item>
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>
