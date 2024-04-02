@@ -40,15 +40,16 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 
 function Navigationbar() {
   return (
-    <Navbar expand="lg" className="bg-body-tertiary">
+    //   bg-body-tertiary
+    <Navbar expand="lg" className="text-light bg-dark">
       <Container>
-        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+        <Navbar.Brand href="#home" className="text-light">React-Bootstrap</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#link">Link</Nav.Link>
-            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
+            <Nav.Link href="#home" className="text-light">Home</Nav.Link>
+            <Nav.Link href="#link" className="text-light">Link</Nav.Link>
+            <NavDropdown title="Dropdown" id="basic-nav-dropdown" className="text-light">
               <NavDropdown.Item href="/">Buttons & I/P Box Value</NavDropdown.Item>
               <NavDropdown.Item href="/nestedcomponent">Nested Components</NavDropdown.Item>
               <NavDropdown.Item href="/props">Props</NavDropdown.Item>
@@ -56,6 +57,7 @@ function Navigationbar() {
               <NavDropdown.Item href="/conditionalRendering">Conditional Rendering</NavDropdown.Item>
               <NavDropdown.Item href="/hooks">Hooks(useState/useEffect)</NavDropdown.Item>
               <NavDropdown.Item href="/hooks1">HooksMore(useEffect,useRef,useCallback)</NavDropdown.Item>
+              <NavDropdown.Item href="/CustomHook">Custom Hook(currency converter)</NavDropdown.Item>
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>

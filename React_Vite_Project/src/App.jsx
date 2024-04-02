@@ -10,6 +10,7 @@ import Form from './components/04Form';
 import ConditionalRendering from './components/05ConditionalRendering';
 import Hooks from './components/06Hooks';
 import Hooks1 from './components/07Hooks1';
+import CustomHook from './components/08CustomHook';
 
 function App() {
 
@@ -25,9 +26,9 @@ function App() {
   const [newData, setnewData] = useState('Deepak');
 
   return (
-    <div className='mx-2'>
+    <>
       <BrowserRouter>
-       <Navigationbar />
+       <Navigationbar />                      <div className='mx-2'>
         <Routes>
           <Route path="/" element={<ButtonClick />} />
           <Route path="/nestedcomponent" element={<NestedComponent />} />
@@ -36,10 +37,11 @@ function App() {
           <Route path="/conditionalRendering" element={<ConditionalRendering />} />
           <Route path="/hooks" element={<Hooks nwCount={newCount} nwData={newData}/>} />
           <Route path="/hooks1" element={<Hooks1/>} />
+          <Route path="/CustomHook" element={<CustomHook/>} />
           {/* <Route path="/" element={</>} /> */}
-        </Routes>
+        </Routes>                             </div>
       </BrowserRouter>
-    </div>
+    </>
   )
 }
 
