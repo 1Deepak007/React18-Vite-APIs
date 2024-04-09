@@ -31,6 +31,23 @@ export default function ButtonClick() {
 
 
 
+    const [hindi, setHindi] = useState(0);
+    const [english, setEnglish] = useState(0);
+    const [maths, setMaths] = useState(0);
+    const [science, setScience] = useState(0);
+    const [sst, setSst] = useState(0);
+    const [percn, setpercn] = useState(null);
+
+    const CalcPerc =()=>{
+        // console.log(hindi, english, maths, science, sst)
+        let obtMarks = Number(hindi) + Number(english) + Number(maths) + Number(science) + Number(sst)
+        let perc = obtMarks/500*100
+        setpercn(perc)
+        console.log(perc)
+    }
+
+
+
     return (
         <>
             <h4 className='text-decoration-underline'>ButtonClick</h4>
@@ -81,6 +98,22 @@ export default function ButtonClick() {
             
             <button onClick={()=>setstatus(!status)} className='btn btn-success'> Toggle </button>  &nbsp;&nbsp;
 
+
+
+
+            
+            <h4>Calculate  Percentage  </h4> <span>{`Your percentage is ` + percn}</span> <br />
+            <label htmlFor="eng"> English marks : </label>
+            <input type='number'  id='eng' onChange={(e)=>{setEnglish(e.target.value)}}></input>
+            <label htmlFor="hin"> Hindi marks : </label>
+            <input type='number'  id='hin' onChange={(e)=>{setHindi(e.target.value)}}></input>
+            <label htmlFor="mth"> Maths marks : </label>
+            <input type='number'  id='mth' onChange={(e)=>{setMaths(e.target.value)}}></input>
+            <label htmlFor="sci"> Science marks : </label>
+            <input type='number'  id='sci' onChange={(e)=>{setScience(e.target.value)}}></input>
+            <label htmlFor="ss"> SST marks : </label>
+            <input type='number'  id='ss' onChange={(e)=>{setSst(e.target.value)}}></input>
+            <button onClick={CalcPerc}>Calculate Percentage</button>
 
 
         </>

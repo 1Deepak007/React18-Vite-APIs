@@ -43,7 +43,7 @@ function Navigationbar() {
     //   bg-body-tertiary
     <Navbar expand="lg" className="text-light bg-dark">
       <Container>
-        <Navbar.Brand href="#home" className="text-light">React-Bootstrap</Navbar.Brand>
+        <Navbar.Brand href="#home" className="text-light">React</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
@@ -58,6 +58,7 @@ function Navigationbar() {
               <NavDropdown.Item href="/hooks">Hooks(useState/useEffect)</NavDropdown.Item>
               <NavDropdown.Item href="/hooks1">HooksMore(useEffect,useRef,useCallback)</NavDropdown.Item>
               <NavDropdown.Item href="/CustomHook">Custom Hook(currency converter)</NavDropdown.Item>
+              <NavDropdown.Item href="/ReactRouter">ReactRouter</NavDropdown.Item>
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>

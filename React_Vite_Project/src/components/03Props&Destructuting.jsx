@@ -66,6 +66,16 @@ export default function Props(props) {
       </ul>
 
 
+      <h4>Receiving Object as prop</h4>
+            <p>{props.myobj.a}</p>
+            <ul>
+                {Object.entries(props.myobj).map(([key, value]) => (
+                    <li key={key}>
+                        <strong>{key}:</strong> {value}
+                    </li>
+                ))}
+            </ul>
+
     </>
   )
 }

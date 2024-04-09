@@ -25,6 +25,9 @@ function App() {
   const [newCount, setnewCount] = useState(0);
   const [newData, setnewData] = useState('Deepak');
 
+  let myobj = {'a':'apple','b':'ball', 'c':'cat', 'd':'dog', 'e':'elephant'}
+
+
   return (
     <>
       <BrowserRouter>
@@ -32,12 +35,13 @@ function App() {
         <Routes>
           <Route path="/" element={<ButtonClick />} />
           <Route path="/nestedcomponent" element={<NestedComponent />} />
-          <Route path="/props" element={<Props secretCode="4987284jkjnsc" agentname="Agent Vinood" name='Ishita Gautam' age='19' other={{ address: 'Lucknow', mobile: '1000' }} calcsum = {sum} />} />
+          <Route path="/props" element={<Props secretCode="4987284jkjnsc" agentname="Agent Vinood" name='Ishita Gautam' age='19' other={{ address: 'Lucknow', mobile: '1000' }} calcsum = {sum} myobj={myobj}/>} />
           <Route path="/form" element={<Form />} />
           <Route path="/conditionalRendering" element={<ConditionalRendering />} />
           <Route path="/hooks" element={<Hooks nwCount={newCount} nwData={newData}/>} />
           <Route path="/hooks1" element={<Hooks1/>} />
           <Route path="/CustomHook" element={<CustomHook/>} />
+          <Route path="/ReactRouter" element={<ReactRouter/>} />
           {/* <Route path="/" element={</>} /> */}
         </Routes>                             </div>
       </BrowserRouter>
