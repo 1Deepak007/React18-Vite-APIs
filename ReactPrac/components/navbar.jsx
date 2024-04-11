@@ -15,6 +15,12 @@ function NavigationBar() {
             <NavDropdown title="Index" id="basic-nav-dropdown" className='text-light'>
               <NavDropdown.Item href="/">React States</NavDropdown.Item>
               <NavDropdown.Item href="/props&destructuring">Props & Destructuring</NavDropdown.Item>
+              <NavDropdown.Item href="/form">Form</NavDropdown.Item>
+              <NavDropdown.Item href="/conditionalRendering">Conditional Rendering</NavDropdown.Item>
+              <NavDropdown.Item href="/CondiRend">Conditional Rendering More</NavDropdown.Item>
+              <NavDropdown.Item href="/UseStatehook">UseStatehook</NavDropdown.Item>
+              <NavDropdown.Item href="/UseEffectHook">UseEffectHook</NavDropdown.Item>
+              <NavDropdown.Item href="/UseRefHook">UseRefHook</NavDropdown.Item>
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>

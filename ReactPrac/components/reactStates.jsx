@@ -65,16 +65,26 @@ export default function ReactStates() {
                 <hr />
 
                 <h4>Calculate  Percentage  </h4> <span>{`Your percentage is ` + percn}</span> <br />
-                <label htmlFor="eng"> English marks : </label>
-                <input type='number' id='eng' onChange={(e) => { setEnglish(e.target.value) }}></input>
-                <label htmlFor="hin"> Hindi marks : </label>
-                <input type='number' id='hin' onChange={(e) => { setHindi(e.target.value) }}></input>
-                <label htmlFor="mth"> Maths marks : </label>
-                <input type='number' id='mth' onChange={(e) => { setMaths(e.target.value) }}></input>
-                <label htmlFor="sci"> Science marks : </label>
-                <input type='number' id='sci' onChange={(e) => { setScience(e.target.value) }}></input>
+                <div className="row">
+                    <div className="col">
+                        <label htmlFor="eng"> English marks : </label>
+                        <input type='number' id='eng' onChange={(e) => { setEnglish(e.target.value) }}></input>  &nbsp;
+
+                        <label htmlFor="hin"> Hindi marks : </label>
+                        <input type='number' id='hin' onChange={(e) => { setHindi(e.target.value) }}></input>     <br/>
+                    </div>
+                </div>
+                <div className="row">
+                    <div className="col">
+                        <label htmlFor="mth"> Maths marks : </label>
+                        <input type='number' id='mth' onChange={(e) => { setMaths(e.target.value) }}></input>    &nbsp;
+                    
+                        <label htmlFor="sci"> Science marks : </label>
+                        <input type='number' id='sci' onChange={(e) => { setScience(e.target.value) }}></input>   <br/>
+                    </div>
+                </div>
                 <label htmlFor="ss"> SST marks : </label>
-                <input type='number' id='ss' onChange={(e) => { setSst(e.target.value) }}></input>
+                <input type='number' id='ss' onChange={(e) => { setSst(e.target.value) }}></input>       &nbsp;
                 <button onClick={CalcPerc}>Calculate Percentage</button>
 
                 <hr />
@@ -131,7 +141,10 @@ export default function ReactStates() {
                         </div>
                     </form>
                 </div>
+            
+                <hr />
             </div>
+
 
         </>
     )
