@@ -30,7 +30,11 @@ export default function UseRefHook() {
     return (
         <div className='container'>
             <h2 className='text-center text-decoration-underline'>UseRefHook</h2>
-            <p>The useRef Hook is a built-in React Hook that can be used to persist values between re-renders. It takes an initial value of any type as an argument and returns an object with a single current property. The value of the ref object remains the same between re-renders. Updating the value of the ref object doesn't trigger a re-render.</p>
+            <ul>
+                <li>The useRef Hook is a built-in React Hook that can be used to persist values between re-renders.</li> 
+                <li>It takes an initial value of any type as an argument and returns an object with a single current property.</li> 
+                <li>The value of the ref object remains the same between re-renders. Updating the value of the ref object doesn't trigger a re-render.</li>
+            </ul>
 
             <p>{count}</p>
             <button ref={BtnRef} onClick={()=>setCount((count)=>(count+1)) }>Click Me!</button>
