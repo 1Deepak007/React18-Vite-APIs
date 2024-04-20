@@ -11,6 +11,8 @@ import UseStatehook from '../components/UseStatehook';
 import UseEffectHook from '../components/UseEffectHook';
 import UseRefHook from '../components/UseRefHook';
 
+import Todos from '../components/MiniProj/Todos';
+
 function App() {
 
   const sum = (n1,n2,n3,n4,n5) =>{
@@ -34,6 +36,10 @@ function App() {
           <Route path="/UseStatehook" element={<UseStatehook/>} />
           <Route path="/UseEffectHook" element={<UseEffectHook/>} />
           <Route path="/UseRefHook" element={<UseRefHook/>} />
+
+          {/* Mini Projects todos */}
+          <Route path="/todos" element={<Todos/>} />
+
         </Routes>
       </BrowserRouter>
     </>

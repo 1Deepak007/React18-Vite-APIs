@@ -22,6 +22,9 @@ function NavigationBar() {
               <NavDropdown.Item href="/UseEffectHook">UseEffectHook</NavDropdown.Item>
               <NavDropdown.Item href="/UseRefHook">UseRefHook</NavDropdown.Item>
             </NavDropdown>
+            <NavDropdown title="Mini Projects" id="basic-nav-dropdown" className='text-light'>
+              <NavDropdown.Item href="/todos">Todos List</NavDropdown.Item>
+            </NavDropdown>
           </Nav>
         </Navbar.Collapse>
       </Container>
