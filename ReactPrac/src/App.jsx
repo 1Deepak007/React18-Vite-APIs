@@ -10,6 +10,14 @@ import CondiRend from  '../components/CondiRend_1';
 import UseStatehook from '../components/UseStatehook';
 import UseEffectHook from '../components/UseEffectHook';
 import UseRefHook from '../components/UseRefHook';
+import ReactRouter from '../components/ReactRouter';
+
+//ReactRouting
+import RouterHome from '../components/ReactRouter/RouterHome';
+import Login from '../components/ReactRouter/Login';
+import About from '../components/ReactRouter/About';
+import User from '../components/ReactRouter/User';
+//-------------
 
 import Todos from '../components/MiniProj/Todos';
 
@@ -22,6 +30,7 @@ function App() {
   let ary = [101,102,103,104,105]
   
   let myobj = {'a':'apple','b':'ball', 'c':'cat', 'd':'dog', 'e':'elephant'}
+
 
   return (
     <>
@@ -36,12 +45,22 @@ function App() {
           <Route path="/UseStatehook" element={<UseStatehook/>} />
           <Route path="/UseEffectHook" element={<UseEffectHook/>} />
           <Route path="/UseRefHook" element={<UseRefHook/>} />
+          <Route path="/ReactRouter" element={<ReactRouter/>} />
+          
+          {/*-----------------ReactRouter-------------------*/}
+          <Route path="/routerhome" element={<RouterHome/>} />
+          <Route path="/routerlogin" element={<Login/>} />
+          <Route path="/routerabout" element={<About/>} />
+          {/*---------ReactRouter with params / Dynamiic Routing-----------*/}
+          <Route path="/routeruser/:username?" element={<User/>} />
+          {/*-----------------------------------------------*/}
 
           {/* Mini Projects todos */}
           <Route path="/todos" element={<Todos/>} />
 
         </Routes>
       </BrowserRouter>
+
     </>
   )
 }

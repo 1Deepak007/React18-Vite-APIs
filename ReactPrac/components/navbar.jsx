@@ -12,7 +12,7 @@ function NavigationBar() {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link href="/" className='text-light'>Home</Nav.Link>
-            <NavDropdown title="Index" id="basic-nav-dropdown" className='text-light'>
+            <NavDropdown title="Main Content" id="basic-nav-dropdown" className='text-light'>
               <NavDropdown.Item href="/">React States</NavDropdown.Item>
               <NavDropdown.Item href="/props&destructuring">Props & Destructuring</NavDropdown.Item>
               <NavDropdown.Item href="/form">Form</NavDropdown.Item>
@@ -20,7 +20,8 @@ function NavigationBar() {
               <NavDropdown.Item href="/CondiRend">Conditional Rendering More</NavDropdown.Item>
               <NavDropdown.Item href="/UseStatehook">UseStatehook</NavDropdown.Item>
               <NavDropdown.Item href="/UseEffectHook">UseEffectHook</NavDropdown.Item>
-              <NavDropdown.Item href="/UseRefHook">UseRefHook</NavDropdown.Item>
+              <NavDropdown.Item href="/UseRefHook">UseRefHook & API call</NavDropdown.Item>
+              <NavDropdown.Item href="/ReactRouter">React Router</NavDropdown.Item>
             </NavDropdown>
             <NavDropdown title="Mini Projects" id="basic-nav-dropdown" className='text-light'>
               <NavDropdown.Item href="/todos">Todos List</NavDropdown.Item>

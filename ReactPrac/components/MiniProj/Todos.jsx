@@ -48,7 +48,7 @@ export default function Todos() {
     return (
       <div className='m-3 px-5' style={{background: 'linear-gradient(to right, #0f0c29, #302b63, #24243e)'}}>
         <h1 className='text-center text-decoration-underline text-light '>Todo List</h1>
-        <h2 className='text-decoration-underline text-light'>Add Todo</h2>
+        <h3 className='text-decoration-underline text-light'>Add Todo</h3>
         <input type="text" value={inputValue} onChange={handleInputChange} className='my-2'/>
         <button onClick={handleAddTodo} className='btn btn-primary mx-4'>{editIndex !== null ? 'Update' : 'Add'}</button>
         <ul className='my-5 container' style={{paddingLeft:'20%',paddingRight:'20%',paddingBottom:'5%'}}>
@@ -61,12 +61,8 @@ export default function Todos() {
               <div className="col">
               <button onClick={() => handleToggleDone(index)} className='btn btn-success mx-2'>{todo.done ? 'Undo' : 'Done'}</button>
                 
-              </div>
-              <div className="col">
               <button onClick={() => handleEditTodo(index)} className='btn btn-primary mx-2'>Edit</button>
 
-              </div>
-              <div className="col">
               <button onClick={() => handleDeleteTodo(index)} className='btn btn-danger mx-2'>Delete</button>
 
               </div>
@@ -76,3 +72,4 @@ export default function Todos() {
       </div>
     );
 }
+

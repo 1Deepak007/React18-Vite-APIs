@@ -17,4 +17,3 @@ For Vite Project:
 create vite project  -> npm create vite@latest
 install node modules -> npm install  or  npm i
 Vite + react Project -> npm run dev   
-
