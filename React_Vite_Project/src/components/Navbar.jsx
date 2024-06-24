@@ -59,6 +59,7 @@ function Navigationbar() {
               <NavDropdown.Item href="/hooks1">HooksMore(useEffect,useRef,useCallback)</NavDropdown.Item>
               <NavDropdown.Item href="/CustomHook">Custom Hook(currency converter)</NavDropdown.Item>
               <NavDropdown.Item href="/ReactRouter">ReactRouter</NavDropdown.Item>
+              <NavDropdown.Item href="/reducer">Reducer</NavDropdown.Item>
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>

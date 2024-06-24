@@ -11,6 +11,7 @@ import ConditionalRendering from './components/05ConditionalRendering';
 import Hooks from './components/06Hooks';
 import Hooks1 from './components/07Hooks1';
 import CustomHook from './components/08CustomHook';
+import Reducer from './components/10Reducer';
 
 function App() {
 
@@ -41,8 +42,11 @@ function App() {
           <Route path="/hooks" element={<Hooks nwCount={newCount} nwData={newData}/>} />
           <Route path="/hooks1" element={<Hooks1/>} />
           <Route path="/CustomHook" element={<CustomHook/>} />
-          <Route path="/ReactRouter" element={<ReactRouter/>} />
+          <Route path="/reducer" element={<Reducer/>} />
+          {/* <Route path="/ReactRouter" element={<ReactRouter/>} /> */}
           {/* <Route path="/" element={</>} /> */}
+
+
         </Routes>                             </div>
       </BrowserRouter>
     </>

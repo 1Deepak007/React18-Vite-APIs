@@ -47,7 +47,7 @@ export default function Hooks1() {
             <h3>UseEffect</h3> <p> is a hook in React used to perform side effects in function components. It runs after every render, including the first render. It can be used to perform tasks like data fetching, subscriptions, or manually changing the DOM in React components.</p>
             <p>Clicked {count} times.</p>
             <button onClick={()=>setCount(count+1)}>Click Me!</button>
-            <hr />
+            <hr /> 
 
             <h3>UseRef</h3> <p> returns a mutable ref object whose .current property is initialized to the passed argument (initialValue). The returned object will persist for the full lifetime of the component.</p>
             <input ref={inputRef} type="text" />
