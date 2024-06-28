@@ -12,6 +12,7 @@ import Hooks from './components/06Hooks';
 import Hooks1 from './components/07Hooks1';
 import CustomHook from './components/08CustomHook';
 import Reducer from './components/10Reducer';
+import UseMemo from './components/11UseMemo';
 
 function App() {
 
@@ -43,6 +44,7 @@ function App() {
           <Route path="/hooks1" element={<Hooks1/>} />
           <Route path="/CustomHook" element={<CustomHook/>} />
           <Route path="/reducer" element={<Reducer/>} />
+          <Route path="/usememo" element={<UseMemo/>} />
           {/* <Route path="/ReactRouter" element={<ReactRouter/>} /> */}
           {/* <Route path="/" element={</>} /> */}
 
